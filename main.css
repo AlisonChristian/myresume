@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    background-color: #2a2d34;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-bar {
+    background-color: #2a2d34;
+    padding: 10px 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.nav-bar .row {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar .row li {
+    display: inline;
+}
+
+.nav-bar .row li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 700;
+}
+
+.nav-bar .row li a:hover {
+    background-color: #f2c14e;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home, .about, .portfolio, .contact {
+    padding: 30vh 0;
+    color: white;
+    text-align: center;
+}
+
+.home {
+    background: url('christian.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(42, 45, 52, 0.7); /* Slightly darker overlay for text readability */
+}
+
+.home .container {
+    position: relative;
+    z-index: 1;
+}
+
+.home h1 {
+    font-size: 2.5em;
+    margin-bottom: 5em;
+}
+
+.home h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.home p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.home .cta-button {
+    background-color: #f2c14e;
+    color: #2a2d34;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home .cta-button:hover {
+    background-color: #e0a800;
+}
+
+.home .social-links {
+    margin-top: 20px;
+}
+
+.home .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.home .social-links a:hover {
+    color: #f2c14e;
+}
+
+.footer {
+    background-color: #1f2229;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.contact-card {
+    background-color: #383c45;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+    color: #f2c14e;
+}
+
+.contact-card p {
+    color: #ccc;
+}
+
+.contact-card form {
+    margin-top: 10px;
+}
+
+.contact-card form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contact-card form input[type="text"],
+.contact-card form input[type="email"],
+.contact-card form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+.contact-card form input[type="submit"] {
+    background-color: #f2c14e;
+    color: #2a2d34;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card form input[type="submit"]:hover {
+    background-color: #e0a800;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
